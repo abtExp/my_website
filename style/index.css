@@ -1,0 +1,207 @@
+@font-face {
+    font-family: glacial-indifference;
+    src: url(../resources/fonts/glacial-indifference/glacial-indifference-regular.otf);
+}
+
+@font-face {
+    font-family: water-brush;
+    src: url(../resources/fonts/water-brush/water-brush.ttf);
+}
+
+body {
+    font-family: glacial-indifference;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.material-symbols-rounded {
+    font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 200, 'opsz' 40;
+    margin: auto 0px;
+}
+
+.click-button {
+    max-width: 400px;
+    text-align: center;
+    border-radius: 200px;
+    padding: 5px;
+}
+
+.click-button:hover {
+    cursor: default;
+    box-shadow: 0px 2px 2px 2px #eee;
+}
+
+.text-icon-pair {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.text-icon-pair-text {
+    flex: 1;
+}
+
+.text-icon-pair-icon {
+    flex: 1;
+}
+
+.horizontal-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.horizontal-list-item {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+.section {
+    flex: 1;
+    height: 100%;
+}
+
+.small-icon {
+    font-size: 2em;
+    color: #eee;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#contact-click-button-icon {
+    transform: translate(1px, -4px) rotate(-30deg);
+    color: rgb(241, 255, 246);
+    margin-right: 5px;
+}
+
+#contact-click-button {
+    color: rgb(241, 255, 246);
+    font-weight: bold;
+    width: 120px;
+    font-size: 1.2em;
+    padding: 0px 0px 0px 20px;
+    background-color: rgb(176, 240, 197);
+}
+
+#contact-click-button:hover {
+    background: rgb(184, 255, 207)
+}
+
+#navigation {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 60%;
+}
+
+#link-icons {
+    position: relative;
+    bottom: 50px;
+    width: 85%;
+}
+
+#banner {
+    flex: 1;
+    height: 100%;
+    background: url(../resources/images/banner_img.jpg) no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+    max-width: 40%;
+}
+
+#banner .content {
+    flex: 1;
+}
+
+#home-splash {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+#main-splash-hi {
+    margin-top: 50px;
+}
+
+#name-banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#signature {
+    font-family: water-brush;
+    font-size: 100px;
+    flex: 1;
+    margin-top: 70%;
+    text-shadow: 2px 2px 10px #eee;
+    color: #eee;
+}
+
+#designation {
+    flex: 1;
+    margin-bottom: 30%;
+    font-weight: bold;
+    font-size: 30px;
+    color: #eee;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    cursor: default;
+    color: rgb(184, 255, 207);
+}
+
+.nav-icon {
+    width: 20px;
+}
+
+#filter {
+    position: absolute;
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 55%;
+}
+
+.active {
+    color: rgb(144, 199, 162);
+}
+
+.social-link {
+    text-decoration: none;
+    color: white;
+}
+
+.social-link:hover {
+    text-shadow: 0px 0px 5px #eee;
+}
