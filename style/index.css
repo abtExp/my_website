@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: water-brush;
-    src: url(../resources/fonts/water-brush/water-brush.ttf);
+    font-family: great-vibes;
+    src: url(../resources/fonts/great-vibes/great-vibes.ttf);
 }
 
 body {
@@ -95,16 +95,16 @@ html {
 }
 
 #contact-click-button {
-    color: rgb(241, 255, 246);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     width: 120px;
     font-size: 1.2em;
     padding: 0px 0px 0px 20px;
-    background-color: rgb(176, 240, 197);
+    background-color: rgb(143, 194, 160);
 }
 
 #contact-click-button:hover {
-    background: rgb(184, 255, 207)
+    background: rgb(158, 216, 177)
 }
 
 #navigation {
@@ -155,7 +155,7 @@ html {
 }
 
 #signature {
-    font-family: water-brush;
+    font-family: great-vibes;
     font-size: 100px;
     flex: 1;
     margin-top: 70%;
