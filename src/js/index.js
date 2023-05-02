@@ -83,9 +83,34 @@ function scrollListener() {
     classActivate(scrollToSectionElement);
 }
 
-function attachScrollListener() {
+function attachScrollButtonListener() {
     let scrollButton = document.getElementById('scroll-button');
     scrollButton.onclick = scrollListener;
+}
+
+function getBoundingRectangle(element) {
+    const rect = element.getBoundingClientRect();
+    console.log(`${element.getAttribute("id")} : `, rect);
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function checkFocus(element) {
+    let allSections = document.getElementsByClassName('section');
+    for (let i = 0; i < allSections.length; i++) {
+        if (getBoundingRectangle(allSections[i])) {
+            classActivate(allSections[i]);
+            console.log('Focused On : ', allSections[i].getAttribute('id'));
+        }
+    }
+}
+
+function attachCheckFocusListener() {
+    window.onscroll = checkFocus;
 }
 
 
@@ -97,5 +122,6 @@ window.onload = () => {
     }
     attachClassActivateListener();
     attachChangeThemeListener();
-    attachScrollListener();
+    attachScrollButtonListener();
+    attachCheckFocusListener();
 }
