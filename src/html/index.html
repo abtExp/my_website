@@ -13,12 +13,12 @@
         <!-- Container For All Pages -->
         <div id='container' class='light-theme'>
             <!-- Scroll Icon -->
-            <div id='scroll-button'>
+            <div id='scroll-button' class='floating'>
                 <i class='fa-solid fa-arrow-down' id='scroll-arrow'></i>
             </div>
             <!-- End Scroll Icon -->
             <!-- Navigation Bar -->
-            <div id='navigation' class='horizontal-list'>
+            <div id='navigation' class='horizontal-list light-theme'>
                 <div class='horizontal-list-item nav-link active' id='home-link'>
                     Home
                 </div>
@@ -38,7 +38,7 @@
                     Contact
                 </div>
                 <div class='horizontal-list-item' id='theme-button'>
-                    <img src='../../resources/icons/moon.png' alt='theme' id='theme-icon' class='nav-icon'/>
+                    <img src='../../resources/icons/moon.png' alt='theme' id='theme-icon' class='nav-icon light-theme'/>
                 </div>
             </div>
             <!-- End Navigation Bar -->
@@ -72,10 +72,15 @@
                 </div>
                 <!-- End Left Image Banner With Link Icons -->
                 <!-- Right Splash Image With Contact Button -->
-                <div class='subsection' id='home-splash'>
+                <div class='subsection' id='home-splash-container'>
                     <div class='content' id='home-splash'>
-                        <div class='bitmoji-image' id='main-splash-hi'>
-                            <img src='../../resources/images/main_splash.png' alt='main-splash' id='main-splash' class='floating' />
+                        <div class='bitmoji-image floating' id='main-splash-hi'>
+                            <div id='blob'>
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+                                    <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
+                                </svg>
+                            </div>
+                            <img src='../../resources/images/main_splash.png' alt='main-splash' id='main-splash' />
                         </div>
                         <div id='contact-click-button' class='text-icon-pair click-button'>
                             <p id='contact-click-button-text', class='text-icon-pair-text'>
@@ -93,7 +98,7 @@
             <!-- About Section -->
             <div id='about' class='section'>
                 <h1 class='page-title'>About Me</h1>
-                <div id='page-content-container'>
+                <div class='page-content-container'>
                     <div id='about-left-image' class='content-img-div about-section-content'>
                         <img src='../../resources/images/hear_me_out.png' alt='hear-me-out' id='about-left-image-img' class='content-img-image'/>
                     </div>
@@ -146,6 +151,195 @@
             <!-- End Portfolio Section -->
             <!-- Skills Section -->
             <div id='skills' class='section'>
+                <h1 class='page-title'>Technical Skills</h1>
+                <div class='page-content-container'>
+                    <div id='programming' class='skill-container content'>
+                        <div id='programming-icon' class='skill-icon lighten'>
+                            <i class="fa-solid fa-code skill-icon-img"></i>
+                        </div>
+                        <div class='skill-top-container'>
+                            <div id='programming-title-container' class='skill-title-container'>
+                                <h1 class='skill-title'>Programming</h1>
+                                <h3 class='skill-description'>Programming Languages & Frameworks</h3>
+                            </div>
+                        </div>
+                        <div class='skill-middle-container darken'>
+                            <div id='programming-skilllist-container' class='skilllist-container'>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-brands fa-python"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>Python</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-solid fa-c"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>C++</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-brands fa-js"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>JavaScript</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-solid fa-t"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>TensorFlow</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-solid fa-fire"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>PyTorch</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-brands fa-html5"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>HTML & CSS</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='skill-bottom-container'>
+                            <div id='programming-statement-container' class='skill-statement-container'>
+                                <p class='skill-statement'>
+                                    Experience with multiple programming languages and different programming frameworks and can build solutions for different environments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id='mlds' class='skill-container content'>
+                        <div id='mlds-icon' class='skill-icon lighten'>
+                            <i class="fa-solid fa-diagram-project skill-icon-img"></i>
+                        </div>
+                        <div class='skill-top-container'>
+                            <div id='mlds-title-container' class='skill-title-container'>
+                                <h1 class='skill-title'>Data Science</h1>
+                                <h3 class='skill-description'>Data Science Domain Knowledge</h3>
+                            </div>
+                        </div>
+                        <div class='skill-middle-container darken'>
+                            <div id='programming-skilllist-container' class='skilllist-container'>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-solid fa-eye"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>Computer Vision</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-solid fa-language"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>NLP</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-solid fa-wave-square"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>Signal Processing</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-solid fa-dice"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>Probability</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-solid fa-chart-simple"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>Statistics</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='skill-bottom-container'>
+                            <div id='mlds-statement-container' class='skill-statement-container'>
+                                <p class='skill-statement'>
+                                    Have experience & knowledge of different ML and DS domains having delivered multiple projects in each domain.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id='cloudinfra' class='skill-container content'>
+                        <div id='cloudinfra-icon' class='skill-icon lighten'>
+                            <i class="fa-solid fa-cloud skill-icon-img"></i>
+                        </div>
+                        <div class='skill-top-container'>
+                            <div id='cloudinfra-title-container' class='skill-title-container'>
+                                <h1 class='skill-title'>Cloud & Infra</h1>
+                                <h3 class='skill-description'>Cloud solutions and development tools</h3>
+                            </div>
+                        </div>
+                        <div class='skill-middle-container darken'>
+                            <div id='programming-skilllist-container' class='skilllist-container'>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-brands fa-google"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>GCP</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-brands fa-aws"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>AWS</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-brands fa-microsoft"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>Azure</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-brands fa-docker"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>Docker</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='skill-bottom-container'>
+                            <div id='cloudinfra-statement-container' class='skill-statement-container'>
+                                <p class='skill-statement'>
+                                    Have deployed on all major cloud service providers and have knowledge of multiple tools that help in efficient development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id='util' class='skill-container content'>
+                        <div id='util-icon' class='skill-icon lighten'>
+                            <i class="fa-solid fa-tools skill-icon-img"></i>
+                        </div>
+                        <div class='skill-top-container'>
+                            <div id='util-title-container' class='skill-title-container'>
+                                <h1 class='skill-title'>Utility Tools</h1>
+                                <h3 class='skill-description'>Other Tools and Technologies</h3>
+                            </div>
+                        </div>
+                        <div class='skill-middle-container darken'>
+                            <div id='programming-skilllist-container' class='skilllist-container'>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-brands fa-git"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>Git</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-brands fa-osi"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>OpenCV</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-solid fa-cube"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>Numpy</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                                <div class='skilllist-item'>
+                                    <div class='skilllist-item-logo skilllist-item-content'><i class="fa-solid fa-database"></i></div>
+                                    <div class='skilllist-item-name skilllist-item-content'>MySQL</div>
+                                    <div class='skilllist-item-rating skilllist-item-content'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='skill-bottom-container'>
+                            <div id='util-statement-container' class='skill-statement-container'>
+                                <p class='skill-statement'>
+                                    Proficient in various tools that are essential for developing robust and fast solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- End Skills Section -->
             <!-- Contact Section -->

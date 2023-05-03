@@ -30,19 +30,32 @@ function attachClassActivateListener() {
 }
 
 function changeTheme() {
-    let container = document.getElementById('container');
-    let activeTheme = container.classList[0];
+    let sections = document.getElementsByClassName('section');
 
     let themeButtonIcon = document.getElementById('theme-icon');
 
-    if (activeTheme === 'dark-theme') {
-        container.classList.remove('dark-theme');
-        container.classList.add('light-theme');
-        themeButtonIcon.setAttribute('src', '../../resources/icons/moon.png');
-    } else {
-        container.classList.remove('light-theme');
-        container.classList.add('dark-theme');
-        themeButtonIcon.setAttribute('src', '../../resources/icons/sun.png');
+    let activeTheme = themeButtonIcon.classList[1];
+
+    let navbar = document.getElementById('navigation');
+
+    for (var i = 0; i < sections.length; i++) {
+        if (activeTheme === 'dark-theme') {
+            sections[i].classList.remove('dark-theme');
+            sections[i].classList.add('light-theme');
+            themeButtonIcon.classList.remove('dark-theme');
+            themeButtonIcon.classList.add('light-theme');
+            navbar.classList.remove('dark-theme');
+            navbar.classList.add('light-theme');
+            themeButtonIcon.setAttribute('src', '../../resources/icons/moon.png');
+        } else {
+            sections[i].classList.remove('light-theme');
+            sections[i].classList.add('dark-theme');
+            themeButtonIcon.classList.remove('light-theme');
+            themeButtonIcon.classList.add('dark-theme');
+            navbar.classList.remove('light-theme');
+            navbar.classList.add('dark-theme');
+            themeButtonIcon.setAttribute('src', '../../resources/icons/sun.png');
+        }
     }
 }
 
