@@ -13,12 +13,18 @@
     src: url(../resources/fonts/poppins/poppins.ttf);
 }
 
+@font-face {
+    font-family: american-signature;
+    src: url(../resources/fonts/american-signature/american-signature.ttf);
+}
+
 body {
     font-family: poppins;
     margin: 0px;
     padding: 0px;
     width: 100%;
     height: 100%;
+    background: #eee;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -113,8 +119,22 @@ html {
 }
 
 .small-icon {
+    border-radius: 10px;
+    max-width: 50px;
+    background: rgba(57, 252, 155, 0.1);
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
     font-size: 2em;
     color: #eee;
+    transform: translateY(4px);
+    transition: 0.25s;
+}
+
+.small-icon:hover {
+    background: rgb(57, 252, 155, 0.2);
+    box-shadow: 0px 0px 10px rgb(57, 252, 155, 0.4);
+    transform: translateY(-10px);
+    transition-duration: 0.25s;
 }
 
 #container {
@@ -136,12 +156,12 @@ html {
     font-size: 1.2em;
     margin-top: 10%;
     padding: 0px 0px 0px 20px;
-    background-color: rgb(127, 230, 161);
+    background: linear-gradient(to right, #19a383, #23d591, #3ce7a5, #52eea3, hsl(137, 100%, 84%));
 }
 
 #contact-click-button:hover {
-    background: rgb(122, 249, 164);
-    box-shadow: 0px 0px 10px rgb(104, 244, 151);
+    background: linear-gradient(to left, #19a383, #23d591, #3ce7a5, #52eea3, hsl(137, 100%, 84%));
+    box-shadow: 20px 20px 5px linear-gradient(to left, #19a383, #23d591, #3ce7a5, #52eea3, hsl(137, 100%, 84%));
 }
 
 #navigation {
@@ -162,11 +182,17 @@ html {
 
 #banner {
     flex: 1;
+    transition: 0.1s;
     height: 100%;
     background: url(../resources/images/banner_img.jpg) no-repeat;
     background-size: cover;
-    filter: grayscale(1);
+    filter: brightness(100%) sepia(1) hue-rotate(132deg) saturate(103.2%) brightness(91.2%);
     max-width: 40%;
+}
+
+#banner:hover {
+    transition: 0.1s;
+    filter: brightness(100%) sepia(1) hue-rotate(132deg) saturate(103.2%) brightness(100%) drop-shadow(20px -30px 30px rgb(57, 252, 155, 0.3));
 }
 
 #banner .content {
@@ -225,6 +251,10 @@ html {
     background-position: center;
     mix-blend-mode: luminosity;
     animation: blobber 30s 0s ease-in-out infinite, wobbler 15s 0s linear infinite alternate;
+}
+
+#blob:hover {
+    box-shadow: 10px 10px 100px rgb(104, 244, 151);
 }
 
 @keyframes blobber {
@@ -311,18 +341,6 @@ html {
     }
 }
 
-
-/* #blob {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0px;
-    fill: #89ffab;
-    width: 90%;
-    z-index: -1;
-    transform: translate(0px, -20%);
-} */
-
 #main-splash-hi {
     max-width: 50%;
     margin: auto;
@@ -342,10 +360,10 @@ html {
 }
 
 #signature {
-    font-family: great-vibes;
-    font-size: 100px;
+    font-family: american-signature;
+    font-size: 22vh;
     flex: 1;
-    margin-top: 70%;
+    margin-top: 50%;
     color: #eee;
 }
 
@@ -385,7 +403,7 @@ html {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 55%;
+    opacity: 65%;
 }
 
 .active {
@@ -395,10 +413,11 @@ html {
 .social-link {
     text-decoration: none;
     color: white;
+    font-size: 0.8em;
 }
 
 .social-link:hover {
-    text-shadow: 0px 0px 5px #eee;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255, 0.5);
 }
 
 #home {
@@ -419,7 +438,7 @@ html {
 }
 
 .light-theme {
-    background-color: #fff;
+    background-color: #eee;
     color: #000;
 }
 
