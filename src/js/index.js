@@ -126,6 +126,24 @@ function attachCheckFocusListener() {
     window.onscroll = checkFocus;
 }
 
+function toggleNeon() {
+    let lightsourceElements = document.getElementsByClassName('lightsource');
+    console.log(lightsourceElements);
+    for (let i = 0; i < lightsourceElements.length; i++) {
+        if (lightsourceElements[i].classList.contains('neon')) {
+            lightsourceElements[i].classList.remove('neon');
+        } else {
+            lightsourceElements[i].classList.add('neon');
+        }
+    }
+}
+
+function attachToggleNeonListener() {
+    let nameBanner = document.getElementById('banner');
+    nameBanner.onmouseover = toggleNeon;
+    nameBanner.onmouseout = toggleNeon;
+}
+
 
 window.onload = () => {
     if (window.location.href.indexOf('#') === -1) {
@@ -137,4 +155,5 @@ window.onload = () => {
     attachChangeThemeListener();
     attachScrollButtonListener();
     attachCheckFocusListener();
+    attachToggleNeonListener();
 }

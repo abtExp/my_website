@@ -6,7 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Anubhav Tiwari🌏</title>
         <script src="https://kit.fontawesome.com/25c4625338.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../../style/index.css">
+        <link rel="stylesheet" type="text/css" href="../../style/index.css">
+        <link rel="stylesheet" type="text/css" href="../../style/skill.css">
+        <link rel="stylesheet" type="text/css" href="../../style/about.css">
+        <link rel="stylesheet" type="text/css" href="../../style/footer.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
@@ -46,28 +49,18 @@
             <!-- Home Page -->
             <div id='home' class='section'>
                 <!-- Left Image Banner With Link Icons -->
-                <div class='subsection' id='banner'>
+                <div class='subsection lightsource' id='banner'>
                     <div id='filter' class='subsection'></div>
                     <div id='name-banner' class='content'>
-                        <div id='signature' class='content'>Anubhav Tiwari</div>
-                        <div id='designation' class='content'>ML Research Engineer</div>
+                        <div id='signature' class='content lightsource'>Anubhav Tiwari</div>
+                        <div id='designation' class='content lightsource'>ML Research Engineer</div>
                     </div>
                     <div id='link-icons' class='horizontal-list content'>
-                        <div class='horizontal-list-item small-icon' id='mail'>
-                            <a href='' class='social-link'><i class="fa-solid fa-envelope"></i></a>
-                        </div>
-                        <div class='horizontal-list-item small-icon' id='github'>
-                            <a href='https://github.com/abtExp' class='social-link'><i class="fa-brands fa-github"></i></a>
-                        </div>
-                        <div class='horizontal-list-item small-icon' id='twitter'>
-                            <a href='https://twitter.com/abtExp_' class='social-link'><i class="fa-brands fa-twitter"></i></a>
-                        </div>
-                        <div class='horizontal-list-item small-icon' id='linkedin'>
-                            <a href='https://www.linkedin.com/in/abtExp' class='social-link'><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                        <div class='horizontal-list-item small-icon' id='resume'>
-                            <a href='' class='social-link'><i class="fa-solid fa-file-arrow-down"></i></a>
-                        </div>
+                        <a href='' id='email' class='horizontal-list-item small-icon social-link lightsource'><i class="fa-solid fa-envelope"></i></a>
+                        <a href='https://github.com/abtExp' id='github' class='horizontal-list-item small-icon social-link lightsource'><i class="fa-brands fa-github"></i></a>
+                        <a href='https://twitter.com/abtExp_' id='twitter' class='horizontal-list-item small-icon social-link lightsource'><i class="fa-brands fa-twitter"></i></a>
+                        <a href='https://www.linkedin.com/in/abtExp' id='linkedin' class='horizontal-list-item small-icon social-link lightsource'><i class="fa-brands fa-linkedin"></i></a>
+                        <a href='' id='resume' class='horizontal-list-item small-icon social-link lightsource'><i class="fa-solid fa-file-arrow-down"></i></a>
                     </div>
                 </div>
                 <!-- End Left Image Banner With Link Icons -->
@@ -103,17 +96,20 @@
                         <img src='../../resources/images/hear_me_out.png' alt='hear-me-out' id='about-left-image-img' class='content-img-image'/>
                     </div>
                     <div id='stat-container' class='about-section-content'>
-                        <p id='about-text' class='stat-container-content'>
-                            I am Anubhav Tiwari, a highly skilled ML Research Engineer with a passion for advancing the field of Machine Learning. 
-                            My expertise lies in taking projects from ideation through research and development to successful deployment on various cloud infrastructures and architectures. 
-                            Throughout my experience, I have spearheaded numerous ML initiatives, ranging from proof of concepts for client initiation calls to establishing new capabilities and deploying solutions on AWS and GCP clouds.
+                        <div id='about-text-container' class='stat-content-container'>
+                            <div id='about-text-bg-filter'></div>
+                            <div id='about-text'>
+                                I am Anubhav Tiwari, a highly skilled ML Research Engineer with a passion for advancing the field of Machine Learning. 
+                                My expertise lies in taking projects from ideation through research and development to successful deployment on various cloud infrastructures and architectures. 
+                                Throughout my experience, I have spearheaded numerous ML initiatives, ranging from proof of concepts for client initiation calls to establishing new capabilities and deploying solutions on AWS and GCP clouds.
 
-                            My technical proficiency spans across multiple facets of ML, including Computer Vision, Audio Signal Processing, and Natural Language Processing. 
-                            Specifically, I have delivered successful projects in crowd density estimation, vehicle license plate detection and recognition, object detection and recognition, face detection and recognition, face swapping, voice activity detection, 
-                            audio source separation, speaker diarization, and natural language to python code generation.
+                                My technical proficiency spans across multiple facets of ML, including Computer Vision, Audio Signal Processing, and Natural Language Processing. 
+                                Specifically, I have delivered successful projects in crowd density estimation, vehicle license plate detection and recognition, object detection and recognition, face detection and recognition, face swapping, voice activity detection, 
+                                audio source separation, speaker diarization, and natural language to python code generation.
 
-                            One of my key strengths lies in my ability to write developer-friendly code that not only reduces redundancies and increases code understandability but also enhances code reusability. With a keen eye for detail and a dedication to delivering high-quality results, I am confident in my ability to drive impactful solutions that make a difference.
-                        </p>
+                                One of my key strengths lies in my ability to write developer-friendly code that not only reduces redundancies and increases code understandability but also enhances code reusability. With a keen eye for detail and a dedication to delivering high-quality results, I am confident in my ability to drive impactful solutions that make a difference.
+                            </div>
+                        </div>
                         <div id='about-stats' class='stat-container-content'>
                             <div class='stat-instance'>
                                 <div class='stat-top-circle'></div>
@@ -147,6 +143,37 @@
             <!-- End Experience Section -->
             <!-- Portfolio Section -->
             <div id='portfolio' class='section'>
+                <h1 class='page-title'>Portfolio</h1>
+                <div class='page-content-container'>
+                    <div id='project-container' class='section'>
+                        <div id='project-item-container' class='subsection'>
+                            <div class='project-item'>
+                                <h2 class='project-name'></h2>
+                                <a href='' class='project-link'></a>
+                                <div class='project-image-bg'></div>
+                                <img src='' class='project-img'/>
+                            </div>
+                            <div class='project-item'>
+                                <h2 class='project-name'></h2>
+                                <a href='' class='project-link'></a>
+                                <div class='project-image-bg'></div>
+                                <img src='' class='project-img'/>
+                            </div>
+                            <div class='project-item'>
+                                <h2 class='project-name'></h2>
+                                <a href='' class='project-link'></a>
+                                <div class='project-image-bg'></div>
+                                <img src='' class='project-img'/>
+                            </div>
+                            <div class='project-item'>
+                                <h2 class='project-name'></h2>
+                                <a href='' class='project-link'></a>
+                                <div class='project-image-bg'></div>
+                                <img src='' class='project-img'/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- End Portfolio Section -->
             <!-- Skills Section -->

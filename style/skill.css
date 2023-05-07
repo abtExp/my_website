@@ -1,0 +1,186 @@
+#skills .content {
+    flex: 1;
+}
+
+.skill-container {
+    max-width: 20%;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#programming {
+    background: rgb(61, 194, 105);
+}
+
+#mlds {
+    background: rgb(114, 197, 228);
+}
+
+#cloudinfra {
+    background: rgb(252, 142, 142);
+}
+
+#util {
+    background: rgb(255, 208, 78);
+}
+
+.skill-top-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skill-middle-container {
+    text-align: left;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: inherit;
+}
+
+.lighten {
+    position: relative;
+    z-index: 0;
+    border-radius: 50%;
+    max-width: 30px;
+    height: 30px;
+}
+
+.lighten:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    opacity: 0.4;
+    border-radius: 50%;
+}
+
+.lighten:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    opacity: 0.4;
+    border-radius: 50%;
+}
+
+.darken {
+    position: relative;
+    z-index: 0;
+}
+
+.darken:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.darken:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.skill-bottom-container {
+    flex: 1;
+}
+
+.skill-title {
+    text-align: left;
+    font-size: 1.8em;
+    font-weight: bold;
+    flex: 1;
+}
+
+.skill-description {
+    text-align: left;
+    flex: 1;
+    font-size: 0.8em;
+}
+
+.skill-statement {
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.skilllist-container {
+    padding: 20px;
+}
+
+.skill-icon {
+    position: absolute;
+    padding: 20px;
+    border-radius: 50%;
+    width: 100%;
+    text-align: center;
+    background: inherit;
+    transform: translate(-30px, -30px);
+}
+
+.skill-icon-img {
+    z-index: 100;
+}
+
+.skilllist-item {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.skilllist-item-logo {
+    flex: 0.1;
+}
+
+.skilllist-item-name {
+    flex: 0.6;
+}
+
+#skills .page-content-container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.skill-title-container {
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.skill-statement {
+    padding: 10px;
+}
+
+.skill-icon-img {
+    font-size: 1.8em;
+    margin: auto;
+    color: inherit;
+}
